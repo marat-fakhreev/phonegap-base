@@ -1,4 +1,4 @@
-# GoGreenRide Fleet manager application
+# Phonegap base application
 
 ## Prepare development version
 
@@ -20,8 +20,8 @@ Install PhoneGap
 
 ## Prepare repository
 
-    git clone git@github.com:gogreenride/iPad-fleet-manager.git ggride-fleet
-    cd ggride-fleet
+    git clone git@github.com:maratfakhreev/phonegap-base.git
+    cd phonegap-base
     npm install
 
 Compile application and start mocks server
