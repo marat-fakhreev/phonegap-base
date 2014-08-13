@@ -14,7 +14,7 @@ define [
   Notifications
 ) ->
 
-  FastClick(document.body)
+  # FastClick(document.body)
 
   App = new Marionette.Application
 
