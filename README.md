@@ -1,6 +1,6 @@
-# Phonegap base application
+# Phonegap-base application
 
-## Prepare development version
+## Prepare environment
 
 Install Node.js
 
@@ -20,37 +20,35 @@ Install PhoneGap
 
 ## Prepare repository
 
-    git clone git@github.com:maratfakhreev/phonegap-base.git
+    git clone git@github.com:maratfakhreev/phonegap-base.git phonegap-base
     cd phonegap-base
-    npm install
+    sh bin/install.sh
 
-Compile application and start mocks server
+## Build application
 
-    grunt
+Build application and start mocks server
 
-## Additional commands
+    grunt                //development version
+    grunt development    //development version
+    grunt staging        //staging version
+    grunt production     //production version
 
-Open safari webinspector for iPad Simulator
+Build application
 
-    grunt c
-
-Build application (development version)
-
-    grunt
-
-    #or
-
-    grunt development
-
-
-Build application (production version)
-
-    grunt production
+    grunt build:development    //development version
+    grunt build:staging        //staging version
+    grunt build:production     //production version
 
 Run tests
 
     grunt test
 
-## Run on iOS
+## Run on iOS device or simulator
 
-Open Xcode project: mobile-app/platforms/ios/GGR fleet manager.xcodeproj
+Open Xcode project: phonegap-base/platforms/ios/GGR fleet manager.xcodeproj
+
+## Additional commands
+
+Open safari webinspector for iPad Simulator
+
+    grunt w

@@ -1,9 +1,8 @@
 {
-  "name": "ggr-fleet-manager",
+  "name": "phonegap-base",
   "authors": [
-    "Marat Fakhreev <marat.fakhreev@flatstack.com>"
+    "Marat Fakhreev <marat.fakhreev@gmail.com>"
   ],
-  "description": "GoGreenRide iPad fleet manager application",
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-requirejs": "~0.4.4",
@@ -15,6 +14,7 @@
     "grunt-contrib-jade": "~0.9.1",
     "grunt-contrib-stylus": "~0.12.0",
     "grunt-contrib-cssmin": "~0.8.0",
+    "grunt-replace": "~0.7.8",
     "grunt-easymock": "~0.1.0",
     "grunt-coffeelint": "~0.0.10",
     "grunt-jsonlint": "~1.0.4",

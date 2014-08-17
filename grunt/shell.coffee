@@ -1,9 +1,11 @@
 module.exports = ->
-  bower:
+  install:
     options:
       stdout: true
-    command:
-      'bower install'
+    command: [
+      'bower install',
+      'sh bin/phonegap_plugins.sh'
+    ].join('&&')
 
   webinspector:
     options:

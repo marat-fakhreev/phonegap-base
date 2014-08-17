@@ -25,6 +25,7 @@ module.exports = (grunt) ->
   ]
 
   grunt.registerTask 'default', [
+    'shell:plugins'
     'development'
   ]
 
@@ -34,6 +35,6 @@ module.exports = (grunt) ->
     'karma'
   ]
 
-  grunt.registerTask 'c', [
+  grunt.registerTask 'w', [
     'shell:webinspector'
   ]

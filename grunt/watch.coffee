@@ -22,12 +22,13 @@ module.exports = (grunt) ->
   development:
     files: ['<%= grunt.appDir %>/**/*']
     tasks: [
-      'jade:html'
+      'jade:development'
       'jade:watch'
       'stylus:watch'
       'coffee:watch'
       'coffeelint:watch'
       'jsonlint:development'
+      'replace:staging'
     ]
   production:
     files: []

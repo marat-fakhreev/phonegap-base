@@ -1,5 +1,5 @@
 module.exports = (grunt) ->
-  html:
+  development:
     options:
       pretty: true
       client: false
