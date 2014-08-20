@@ -43,12 +43,42 @@ Run tests
 
     grunt test
 
-## Run on iOS device or simulator
+## Run on iOS
 
 Open Xcode project: phonegap-base/platforms/ios/GGR fleet manager.xcodeproj
 
-## Additional commands
+### Additional commands
 
 Open safari webinspector for iPad Simulator
 
     grunt w
+
+## Run on Android
+
+Install the [Android SDK](developer.android.com/sdk)
+
+Install Ant:
+
+    brew install ant
+
+On OSX or Linux, you can use a text editor to create or modify the ~/.bash_profile file, adding a line such as the following:
+
+    export PATH=${PATH}:/Development/adt-bundle/sdk/platform-tools:/Development/adt-bundle/sdk/tools
+
+Add the paths for java and ant if needed and this line in ~/.bash_profile
+
+    $ source ~/.bash_profile
+
+Use next command for prepare environment:
+
+    android
+
+[Create Android virtual device](http://docs.phonegap.com/en/edge/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
+
+Install [Genymotion](http://www.genymotion.com/) and add Android 4.4.2 device (MotoX for example)
+
+[How to debug application on android](https://developers.google.com/chrome-developer-tools/docs/remote-debugging#debugging-webviews)
+
+### Run
+
+    phonegap run android
