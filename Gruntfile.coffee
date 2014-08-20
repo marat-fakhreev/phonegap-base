@@ -9,24 +9,21 @@ module.exports = (grunt) ->
     specs: 9999
 
   grunt.appDir = 'app'
-  grunt.publicDir = 'platforms/ios/www'
+  grunt.publicDir = 'www'
+  grunt.iosDir = 'platforms/ios/www'
+  grunt.androidDir = 'platforms/android/assets/www'
   grunt.testDir = 'specs'
 
   require('load-grunt-config')(grunt)
 
-  grunt.registerTask 'development', [
+  grunt.registerTask 'ios', [
     'build:development'
+    'copy:ios'
     'server:development'
   ]
 
-  grunt.registerTask 'production', [
-    'build:production'
-    'server:production'
-  ]
-
   grunt.registerTask 'default', [
-    'shell:plugins'
-    'development'
+    'ios'
   ]
 
   grunt.registerTask 'test', [

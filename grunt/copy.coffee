@@ -7,3 +7,11 @@ module.exports = (grunt) ->
       { expand: true, cwd: 'bower_components', dest: '<%= grunt.publicDir %>/scripts/bower_components', src: '**' }
       { expand: true, cwd: 'vendor', dest: '<%= grunt.publicDir %>/scripts/vendor', src: '**' }
     ]
+  ios:
+    files: [
+      { expand: true, cwd: '<%= grunt.publicDir %>', dest: '<%= grunt.iosDir %>', src: '**' }
+    ]
+  android:
+    files: [
+      { expand: true, cwd: '<%= grunt.publicDir %>', dest: '<%= grunt.androidDir %>', src: '**' }
+    ]

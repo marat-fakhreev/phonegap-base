@@ -29,6 +29,7 @@ module.exports = (grunt) ->
       'coffeelint:watch'
       'jsonlint:development'
       'replace:staging'
+      'copy:ios'
     ]
   production:
     files: []

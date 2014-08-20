@@ -1,10 +1,21 @@
 module.exports = (grunt) ->
+  local:
+    options:
+      patterns: [
+        match: 'environment'
+        replacement: 'local'
+      ]
+    files: [
+      expand: true
+      flatten: true
+      src: ['<%= grunt.publicDir %>/scripts/settings/settings.js']
+      dest: '<%= grunt.publicDir %>/scripts/settings/'
+    ]
   staging:
     options:
       patterns: [
         match: 'environment'
         replacement: 'staging'
-        # 'replacement:development' #for testing with mocks server
       ]
     files: [
       expand: true

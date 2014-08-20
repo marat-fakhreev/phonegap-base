@@ -1,10 +1,7 @@
 module.exports = (grunt) ->
   development: [
     '<%= grunt.publicDir %>/**/*'
-    '!<%= grunt.publicDir %>/plugins'
-    '!<%= grunt.publicDir %>/plugins/**/*'
-    '!<%= grunt.publicDir %>/cordova.js'
-    '!<%= grunt.publicDir %>/cordova_plugins.js'
+    '!<%= grunt.publicDir %>/config.xml'
     'access_logs.db'
   ]
   production: [

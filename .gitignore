@@ -22,16 +22,6 @@ bower_components
 access_logs.db
 npm-debug.log
 plugins/*
-
-#Temp
-
-platforms
-
-#iOS Specific folders
-
-platforms/ios/www/*
-!platforms/ios/www/cordova.js
-!platforms/ios/www/cordova_plugins.js
-!platforms/ios/www/plugins
-
-#Android Specific folders
+platforms/*
+www/*
+!www/config.xml

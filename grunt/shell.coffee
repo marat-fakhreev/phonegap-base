@@ -2,10 +2,8 @@ module.exports = ->
   install:
     options:
       stdout: true
-    command: [
-      'bower install',
-      'sh bin/phonegap_plugins.sh'
-    ].join('&&')
+    command:
+      'bower install'
 
   webinspector:
     options:
