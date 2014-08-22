@@ -1,12 +1,14 @@
 define [
   'marionette'
   'facades/session'
+  'facades/spinner'
   'views/abstract/form_view'
   'facades/notifications'
   'templates'
 ], (
   Marionette
   Session
+  Spinner
   AbstractFormView
   Notifications
 ) ->
@@ -35,6 +37,8 @@ define [
       event.preventDefault()
 
       if @model.isValid()
-        Session.create()
+        Spinner.show()
+        Session.create().then ->
+          Spinner.hide()
       else
         Notifications.error('Please fill all the fields')

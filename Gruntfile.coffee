@@ -32,6 +32,10 @@ module.exports = (grunt) ->
     'karma'
   ]
 
-  grunt.registerTask 'w', [
-    'shell:webinspector'
+  grunt.registerTask 'w:ipad', [
+    'shell:webinspector_ipad'
+  ]
+
+  grunt.registerTask 'w:iphone', [
+    'shell:webinspector_iphone'
   ]

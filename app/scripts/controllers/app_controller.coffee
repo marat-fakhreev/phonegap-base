@@ -3,6 +3,7 @@ define [
   'facades/session'
   'facades/event_aggregator'
   'facades/reqres'
+  'facades/spinner'
   'views/layouts/layout'
   'views/layouts/header'
   'views/layouts/navigation'
@@ -13,6 +14,7 @@ define [
   Session
   Vent
   ReqRes
+  Spinner
   Layout
   HeaderLayout
   NavigationLayout
@@ -24,6 +26,8 @@ define [
     initialize: ->
       @layout = new Layout
       @layout.render()
+      Spinner.init()
+
       @_bindEvents()
       @_renderLayout()
 
@@ -43,6 +47,8 @@ define [
         Vent.trigger('title:change', 'Phonegap-base')
         @layout.mainRegion.show(new LoginView)
 
+      Spinner.hide()
+
     someLink: ->
       Vent.trigger('title:change', 'Other Screen')
-      console.log 'Show other screen'
+      Spinner.hide()

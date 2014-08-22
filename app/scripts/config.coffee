@@ -15,6 +15,7 @@ requirejs.config
     'moment': 'bower_components/moment/moment'
     'moment-timezone': 'bower_components/moment-timezone/builds/moment-timezone-with-data'
     'fastclick': 'bower_components/fastclick/lib/fastclick'
+    'spinner': 'bower_components/spinjs/spin'
     #vendor
     'jade': 'vendor/scripts/runtime'
     'jquery-mobile': 'vendor/scripts/jquery.mobile.custom'

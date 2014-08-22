@@ -6,7 +6,7 @@ define ->
 
     local =
       port: 8001
-      url: 'http://localhost'
+      url: 'http://10.0.1.22' #use your local IP address
       api: 'api'
 
     development =

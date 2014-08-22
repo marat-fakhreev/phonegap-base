@@ -16,7 +16,8 @@
     "almond": "~0.2.9",
     "moment": "~2.7.0",
     "moment-timezone": "~0.1.0",
-    "fontawesome": "~4.1.0"
+    "fontawesome": "~4.1.0",
+    "spinjs": "~2.0.1"
   },
   "resolutions": {
     "jquery": "~2.1.1"

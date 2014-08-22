@@ -5,8 +5,14 @@ module.exports = ->
     command:
       'bower install'
 
-  webinspector:
+  webinspector_ipad:
     options:
       stdout: true
     command:
-      'sh bin/webinspector.sh'
+      'sh bin/webinspector_ipad.sh'
+
+  webinspector_iphone:
+    options:
+      stdout: true
+    command:
+      'sh bin/webinspector_iphone.sh'
