@@ -18,10 +18,6 @@ define [
 
   App = new Marionette.Application
 
-  App.addRegions
-    headerRegion: '#header_region'
-    mainRegion: '#main_region'
-
   App.navigate = (route, options) ->
     options or= {}
     Backbone.history.navigate(route, options)
@@ -34,8 +30,9 @@ define [
       @router = new Router(controller: @controller)
       Backbone.history.start()
 
-      $(document).on 'tap', '*', (event) ->
+      $(document).on 'tap, click', '*', (event) ->
         self = $(event.currentTarget)
+        event.preventDefault()
 
         $('.popover').each (index, item) ->
           $(item).removeClass('show-popover') unless $(item).hasClass('js-select-popover')

@@ -6,7 +6,7 @@ define [
 ], (Backbone, Settings, Notifications) ->
 
   class User extends Backbone.NestedModel
-    url: "#{Settings.getUrl()}/users_tokens"
+    url: "#{Settings.getUrl()}/user_tokens"
 
     defaults:
       'username': null

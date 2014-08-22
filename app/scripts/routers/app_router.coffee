@@ -1,19 +1,19 @@
 define [
   'marionette'
-  'application'
   'facades/event_aggregator'
   'backbone.routefilter'
-], (Marionette, App, Vent) ->
+], (Marionette, Vent) ->
 
   class AppRouter extends Marionette.AppRouter
     appRoutes:
       '': 'root'
+      'some_link': 'someLink'
 
     initialize: ->
       @listenTo Vent, 'session:create session:destroy', @onRedirectToRoot
 
     onRoute: (route) ->
-      Vent.trigger('ui:show') if route isnt 'root'
+      Vent.trigger('navigation:hide')
 
     onRedirectToRoot: ->
       @navigate('', trigger: false)

@@ -1,4 +1,5 @@
 define ->
 
   class RoutesHelper
-    @rootPath: -> ''
+    @rootPath: -> '#'
+    @somelink: -> '#some_link'
