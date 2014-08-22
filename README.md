@@ -45,13 +45,19 @@ Run tests
 
 ## Run on iOS
 
-Open Xcode project: phonegap-base/platforms/ios/GGR fleet manager.xcodeproj
+Open Xcode project: `phonegap-base/platforms/ios/GGR fleet manager.xcodeproj` or use phonegap command:
+
+    phonegap run ios
 
 ### Additional commands
 
+Open safari webinspector for iPhone Simulator
+
+    grunt w:iphone
+
 Open safari webinspector for iPad Simulator
 
-    grunt w
+    grunt w:ipad
 
 ## Run on Android
 
